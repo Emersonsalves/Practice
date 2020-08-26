@@ -205,8 +205,7 @@ namespace Practice
             else
             {
                 Console.WriteLine("Os valores dos Arrays não são iguais");
-            }
-            
+            }            
         }
 
         static void pratica15() //Procura por um elemento dentro de um array e informa na tela

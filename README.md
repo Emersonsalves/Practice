@@ -46,3 +46,6 @@ Verifica se os elementos de dois arrays são iguais e imprime a mensagem
 
 Pratica15
 Procura por um elemento dentro de um array e informa na tela
+
+Pratica16
+Utilizando o comando swich case

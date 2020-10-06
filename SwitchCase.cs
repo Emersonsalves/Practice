@@ -1,5 +1,5 @@
 using System;
-using System.Linq;
+using System.Diagnostics;
 
 namespace Practice
 {
@@ -45,6 +45,46 @@ namespace Practice
                 Console.WriteLine("Para o transporte escolhido o tempo é de: {0} horas de viagem", horas);
             }
 
+        }
+        static void pratica2() // Utilizando o comando Switch case
+        {
+            string clima = "nublado";
+            switch (clima)
+            {
+                case "chuvoso":
+                Console.WriteLine("Vá brincar lá fora, o dia esta ensolarado.");
+                break;
+                case "nublado":
+                Debug.WriteLine("Vá brincar lá fora, mas leve seu guarda-chuva, pois está nublado.");
+                break;
+                default:
+                Console.WriteLine("Não foi possível determinar o clima.");
+                break;
+            }
+        }
+
+        static void pratica3()
+        {
+            int sorteio = 451876;
+            switch (sorteio)
+            {
+                case 467681:
+                Console.WriteLine("Você ganhou um celular.");
+                break;
+                case 451876:
+                Console.WriteLine("Você ganhou um PS4.");
+                break;
+                case 742167:
+                Debug.WriteLine("Desculpe, você não ganhou nada.");
+                break;
+                case 741963:
+                Debug.WriteLine("Você ganhou um ingresso para o cinema.");
+                break;
+                default:
+                Console.WriteLine("Desculpe, você não ganhou nada.");
+                break;
+            }
+            Console.Read();
         }
         static void Main(string[] args)=> pratica1();
         

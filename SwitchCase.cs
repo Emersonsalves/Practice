@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Practice
+namespace getting_started
 {
     class SwitchCase
     {
@@ -86,7 +86,85 @@ namespace Practice
             }
             Console.Read();
         }
-        static void Main(string[] args)=> pratica1();
+
+        static void pratica4()
+        {
+            Console.WriteLine("Digite um número e tecle enter.");
+            var number = int.Parse(Console.ReadLine());
+
+            switch (number)
+            {
+                case 10:
+                case 20:
+                case 30:
+                Console.WriteLine("O número é: " + number);
+                break;
+                default:
+                Console.WriteLine("O número não é 10, 20 ou 30");
+                break;
+            }
+            Console.ReadKey();
+        }
+
+        static void pratica5()
+        {
+            Console.WriteLine("Digite a nota do aluno (A,B,C,D ou F)");
+            char nota = char.Parse(Console.ReadLine().ToUpper());
+
+            switch(nota)
+            {
+                case 'A':
+                    Console.WriteLine("Excelenete !");
+                    break;
+                case 'B':
+                case 'C':
+                    Console.WriteLine("Muito bem !");
+                    break;
+                case 'D':
+                    Console.WriteLine("O aluno foi para recuperação.");
+                    break;
+                case 'F':
+                    Console.WriteLine("O aluno foi Reprovado.");
+                    break;
+                default:
+                    Console.WriteLine("Nota Inválida.");
+                    break;
+            }
+            Console.WriteLine(" Nota do Aluno :  {0} ", nota);
+            Console.ReadKey();
+        }
+
+        public enum Volume
+        {
+            Baixo,
+            Medio,
+            Indefinido,
+            Alto
+        }
+
+        static void pratica6()
+        {
+           Volume volume = Volume.Alto;
+
+            switch(volume)
+            {
+                case Volume.Baixo:
+                    Console.WriteLine("O volume está baixo");
+                    break;
+                case Volume.Medio:
+                    Console.WriteLine("O volume está médio");
+                    break;
+                case Volume.Alto:
+                    Console.WriteLine("O volume está alto");
+                    break;
+                default:
+                    Console.WriteLine("Indefinido");
+                    break;
+            }
+            Console.ReadKey(); 
+        }
+
+        static void Main(string[] args)=> pratica6();
         
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Practice
+namespace getting_started
 {
     class Loop
     {
@@ -60,7 +60,7 @@ namespace Practice
         }
 
 
-        static void Main(string[] args)=> loop4();
+        static void Main(string[] args)=> loop1();
         
     }
 }
